@@ -1,6 +1,0 @@
-import time
-
-def sec():
-    time.sleep(1)
-
-sec()

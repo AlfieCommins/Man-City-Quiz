@@ -10,6 +10,7 @@ def football_question():
             print("CORRECTT!!!")
             break
         else:
+            os.system('cls')
             print("INCORRECT, TRY AGAIN IN")
             time.sleep(1)
             print("\n3,")
@@ -42,9 +43,10 @@ def MCFC_stadium():
             print("\n2,") 
             time.sleep(1)
             print("\n1,")
-            time.sleep(1)    
+            time.sleep(1) 
             os.system('cls')
             football_question()
+
         
 MCFC_stadium()
 
@@ -62,6 +64,7 @@ def event_order():
             print("CORRECT!!!")
             break
         else:
+            os.system('cls')
             print("INCORRECT, RESTART IN!!!")
             time.sleep(1)
             print("\n3,")
