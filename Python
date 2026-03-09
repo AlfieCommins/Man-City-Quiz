@@ -6,11 +6,18 @@ def football_question():
         answer = input("In what year was Manchester City founded? ")
       
         if answer == "1880":
+            os.system('cls')
             print("CORRECTT!!!")
             break
         else:
-            print("INCORECT, TRY AGAIN")
-            time.sleep(2)
+            print("INCORRECT, TRY AGAIN IN")
+            time.sleep(1)
+            print("\n3,")
+            time.sleep(1)
+            print("\n2,") 
+            time.sleep(1)
+            print("\n1,")
+            time.sleep(1)    
             os.system('cls')
           
 football_question()
@@ -28,8 +35,16 @@ def MCFC_stadium():
             print("CORRECT!!!")
             break 
         else:
-            print("Incorrect, Return To The Beginning")
+            print("INCORRECT, RESTART IN")
+            time.sleep(1)
+            print("\n3,")
+            time.sleep(1)
+            print("\n2,") 
+            time.sleep(1)
+            print("\n1,")
+            time.sleep(1)    
             os.system('cls')
+            football_question()
         
 MCFC_stadium()
 
@@ -47,7 +62,14 @@ def event_order():
             print("CORRECT!!!")
             break
         else:
-            print("INCORRECT, RETURN TO THE BEGGINNING!!!")
+            print("INCORRECT, RESTART IN!!!")
+            time.sleep(1)
+            print("\n3,")
+            time.sleep(1)
+            print("\n2,") 
+            time.sleep(1)
+            print("\n1,")
+            time.sleep(1) 
             os.system('cls')
             football_question()
 
