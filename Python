@@ -1,16 +1,18 @@
-import os
 import time
+
+def clear():
+    print("\033[2J\033[H", end="")
 
 def football_question():
     while True:
         answer = input("In what year was Manchester City founded? ")
       
         if answer == "1880":
-            os.system('cls')
-            print("CORRECTT!!!")
+            clear()
+            print("CORRECT!!!")
             break
         else:
-            os.system('cls')
+            clear()
             print("INCORRECT, TRY AGAIN IN")
             time.sleep(1)
             print("\n3,")
@@ -19,12 +21,12 @@ def football_question():
             time.sleep(1)
             print("\n1,")
             time.sleep(1)    
-            os.system('cls')
+            clear()
           
 football_question()
 
 time.sleep(2)
-os.system('cls')
+clear()
 
 def MCFC_stadium():
     while True:
@@ -32,7 +34,7 @@ def MCFC_stadium():
         "\n\na) The Etihad\n\nb) Anfield\n\nc) Old Trafford\n\n")
         
         if answer in ["a","A","The Etihad","the etihad","the Etihad","The etihad"]:
-            os.system('cls')
+            clear()
             print("CORRECT!!!")
             break 
         else:
@@ -44,14 +46,14 @@ def MCFC_stadium():
             time.sleep(1)
             print("\n1,")
             time.sleep(1) 
-            os.system('cls')
+            clear()
             football_question()
 
         
 MCFC_stadium()
 
 time.sleep(2)
-os.system('cls')
+clear()
 
 def event_order():
     while True:
@@ -60,11 +62,11 @@ def event_order():
         "\n\n4) Manchester City completes the treble\n\n5) Manchester City 4-0 Real Madrid\n\n")
 
         if answer == "3,1,2,5,4":
-            os.system('cls')
+            clear()
             print("CORRECT!!!")
             break
         else:
-            os.system('cls')
+            clear()
             print("INCORRECT, RESTART IN!!!")
             time.sleep(1)
             print("\n3,")
@@ -73,7 +75,7 @@ def event_order():
             time.sleep(1)
             print("\n1,")
             time.sleep(1) 
-            os.system('cls')
+            clear()
             football_question()
 
 event_order()
