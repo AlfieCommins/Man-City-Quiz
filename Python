@@ -1,0 +1,54 @@
+import os
+import time
+
+def football_question():
+    while True:
+        answer = input("In what year was Manchester City founded? ")
+      
+        if answer == "1880":
+            print("CORRECTT!!!")
+            break
+        else:
+            print("INCORECT, TRY AGAIN")
+            time.sleep(2)
+            os.system('cls')
+          
+football_question()
+
+time.sleep(2)
+os.system('cls')
+
+def MCFC_stadium():
+    while True:
+        answer = input("What is the name of Manchester City's home stadium" + 
+        "\n\na) The Etihad\n\nb) Anfield\n\nc) Old Trafford\n\n")
+        
+        if answer in ["a","A","The Etihad","the etihad","the Etihad","The etihad"]:
+            os.system('cls')
+            print("CORRECT!!!")
+            break 
+        else:
+            print("Incorrect, Return To The Beginning")
+            os.system('cls')
+        
+MCFC_stadium()
+
+time.sleep(2)
+os.system('cls')
+
+def event_order():
+    while True:
+        answer = input("Rank these events in chronological order (example-1,2,3): \n\n1) Manchester City wins their first Premier League" +
+        " not including devision 1)\n\n2) Pep Guardiola appointed manager\n\n3) Manchester City 6-1 Manchester United" +
+        "\n\n4) Manchester City completes the treble\n\n5) Manchester City 4-0 Real Madrid\n\n")
+
+        if answer == "3,1,2,5,4":
+            os.system('cls')
+            print("CORRECT!!!")
+            break
+        else:
+            print("INCORRECT, RETURN TO THE BEGGINNING!!!")
+            os.system('cls')
+            football_question()
+
+event_order()
